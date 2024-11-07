@@ -32,7 +32,7 @@ export default function Home() {
 
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:3000/api/processimage", formData, {
+      const response = await axios.post("https://wash-me-car-wash-la7j.vercel.app/api/processimage", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
